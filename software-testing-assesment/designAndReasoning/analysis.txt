@@ -1,0 +1,42 @@
+The following feature has been requested on one of our products. This
+feature is role based and only available to client administrator
+roles.
+
+It involves the client administrator having the ability to manage
+their own standard users of our system:
+
+Below are the basic requirements:
+
+Ability to add users based on the available licenses
+Ability to edit user details
+Ability to remove users
+
+Questions
+
+1)Given the above high-level requirements, what are some of the
+questions you would ask each of following team members to understand
+this feature better?
+
+* Product owner   
+      1. Can you please specify the order of the requirements?
+      2. How many numbers of Users need to be added? 
+      3. How many minimum and maximum number of Users and licenses?
+      4. What are fields and their type and the length for User details?
+* UX designer   
+      1. Can you please give the wire frames for the following
+       a) User Details add page.
+        b) User Details edit page.
+        c) User Details remove page.
+* Technical Architect
+        Can you please provide the high level and low level design diagrams and UML diagrams to better understand the relation ship among different modules.
+      
+
+2)In order to delight the user with these features, how would you want it to work?
+    a) I will look and check for User friendly UX/UI
+    b) Appropriate Error and or Confirmation messages before committing each action.
+  
+3)Based on your response to the previous question what would you
+automate in the testing of this feature?
+a)	User Addition
+b)	User Edit
+c)	User Remove
