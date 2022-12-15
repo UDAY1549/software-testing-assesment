@@ -38,13 +38,16 @@ public class SauceDemo {
         driver.findElement(By.id("postal-code")).sendKeys("1686");
         driver.findElement(By.id("continue")).click();
 
-        WebElement totalItemsPrice = driver.findElement(By.xpath("//div[@class='cart_list']"));
+        WebElement itemsList = driver.findElement(By.xpath("//div[@class='cart_list']"));
+        System.out.println("List of Items in Cart: "+itemsList.getText());
+
+        WebElement totalItemsPrice = driver.findElement(By.xpath("//div[@class='summary_subtotal_label']"));
         System.out.println("totalItemsPrice: "+totalItemsPrice.getText());
 
-        WebElement taxPrice = driver.findElement(By.xpath("//div[@class='cart_list']"));
+        WebElement taxPrice = driver.findElement(By.xpath("//div[@class='summary_tax_label']"));
         System.out.println("taxPrice: "+taxPrice.getText());
 
-        WebElement totalPrice = driver.findElement(By.xpath("//div[@class='cart_list']"));
+        WebElement totalPrice = driver.findElement(By.xpath("//div[@class='summary_total_label']"));
         System.out.println("totalPrice: "+totalPrice.getText());
 
         driver.findElement(By.id("finish")).click();
